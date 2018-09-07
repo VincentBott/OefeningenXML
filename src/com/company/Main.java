@@ -66,21 +66,40 @@ public class Main {
 
 class Boek{
     private String titel;
+    private String auteur;
+    private String beoordeling;
+
     public String getTitel() {
         return titel;
     }
 
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public String getBeoordeling() {
+        return beoordeling;
+    }
     public void setTitel(String titel) {
         this.titel = titel;
+    }
+
+    public void setAuteur(String auteur) {
+        this.auteur = auteur;
+    }
+
+    public void setBeoordeling(String beoordeling) {
+        this.beoordeling = beoordeling;
     }
 
     @Override
     public String toString() {
         return "Boek{" +
-                "titel='" + titel + '\'' +
-                '}';
+                "titel='" + titel + "', auteur='" + auteur + "', beoordeling='" +  beoordeling + "'}";
+
     }
 }
+
 
 class MyContentHandler extends DefaultHandler {
     private StringBuilder tekstBuilder = new StringBuilder();
@@ -115,10 +134,16 @@ class MyContentHandler extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        if (localName.equals("titel")){
+        if (localName.equals("titel"))
             boek.setTitel(tekstBuilder.toString());
 
-        } else if (localName.equals("boek")){
+        else if (localName.equals("auteur"))
+            boek.setAuteur(tekstBuilder.toString());
+
+        else if (localName.equals("beoordeling"))
+            boek.setBeoordeling(tekstBuilder.toString());
+
+        else if (localName.equals("boek")){
             boeken.add(boek);
         }
         tekstBuilder.setLength(0); // terug leegmaken
