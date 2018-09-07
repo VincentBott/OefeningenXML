@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE familie [
+
+<!ELEMENT familie (vader, moeder, kinderen)+>
+<!ELEMENT vader (voornaam, achternaam)>
+<!ELEMENT moeder (voornaam, achternaam)>
+<!ELEMENT kinderen (kind)+>
+<!ELEMENT kind (voornaam, achternaam)>
+<!ELEMENT voornaam (#PCDATA)>
+<!ELEMENT achternaam (#PCDATA)>
+<!ATTLIST lid nr ID #REQUIRED>
+<!ENTITY achternaam "Vermeulen">
+        ]>
+
+
+
+<familie>
+    <vader>
+        <voornaam>Jos</voornaam>
+        <achternaam>&achternaam;</achternaam>
+    </vader>
+    <moeder>
+        <voornaam>Marie</voornaam>
+        <achternaam>&achternaam;</achternaam>
+    </moeder>
+    <kinderen>
+        <kind>
+            <voornaam>Joske</voornaam>
+            <achternaam>&achternaam;</achternaam>
+        </kind>
+        <kind>
+            <voornaam>Marieke</voornaam>
+            <achternaam>&achternaam;</achternaam>
+        </kind>
+    </kinderen>
+</familie>

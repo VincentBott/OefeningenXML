@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xmlns="http://www.vincentbott.org"
+           targetNamespace="http://www.vincentbott.org">
+    <xs:element name="namen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="naam"  maxOccurs="10">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="voornaam" type="xs:string"/>
+                        <xs:element name="achternaam" type="xs:string"/>
+                        <xs:element name="geboortedatum" type="geboortedatumtype"/>
+                    </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="geboortedatumtype">
+        <xs:simpleContent>
+            <xs:extension base="xs:date">
+                <xs:attribute name="nationaliteit" use="required" fixed="B" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE bestelbon [
+
+        <!ELEMENT films (film)+>
+        <!ELEMENT film (titel, hoofdrolspeler, jaartal, categorie, land)>
+
+
+        <!ELEMENT titel (#PCDATA)>
+        <!ELEMENT hoofdrolspeler (#PCDATA)>
+        <!ELEMENT jaartal (#PCDATA)>
+
+        <!ATTLIST film categorie #IMPLIED>
+        <!ATTLIST film land #DEFAULT "België>
+
+
+        ]>
+
+
+<bestelbon>
+<film>
+<titel>Rambo</titel>
+<hoofdrolspeler>Sylvester Stallone</hoofdrolspeler>
+ jaartal>1985</jaartal>
+</film>
+<film>
+<titel>Robocop</titel>
+<hoofdrolspeler>Een zeer goed acteur</hoofdrolspeler>
+<jaartal>1985</jaartal>
+
+</film>
+<film>
+<titel>Jurrassic Park</titel>
+<hoofdrolspeler>Steven Spielberg</hoofdrolspeler>
+<jaartal>1995</jaartal>
+
+</film>
+</bestelbon>

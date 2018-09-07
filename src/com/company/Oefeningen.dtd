@@ -1,0 +1,6 @@
+<!ELEMENT lokaal (PC)+>
+<!ATTLIST lokaal naam NMTOKEN #REQUIRED>
+<!ELEMENT PC (nr, cursist1, cursist2)>
+<!ELEMENT nr (#PCDATA)>
+<!ELEMENT cursist1 (#PCDATA)>
+<!ELEMENT cursist2 (#PCDATA)>

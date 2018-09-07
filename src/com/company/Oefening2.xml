@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE leden [
+<!ELEMENT leden (lid+)>
+<!ELEMENT lid (naam, leeftijd)>
+<!ELEMENT naam (#PCDATA)>
+<!ELEMENT leeftijd (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ATTLIST lid nr ID #REQUIRED>
+        ]>
+
+
+
+<leden>
+    <lid nr="ID1">
+        <naam>Jan</naam>
+        <leeftijd>24</leeftijd>
+    </lid>
+    <lid nr="ID2">
+        <naam>Mieke</naam>
+        <leeftijd>32</leeftijd>
+    </lid>
+    <lid nr="ID3">
+        <naam>Joris</naam>
+        <leeftijd>21</leeftijd>
+    </lid>
+</leden>

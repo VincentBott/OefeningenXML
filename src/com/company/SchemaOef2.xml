@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<producten xmlns="http://www.beta.ua.ac.be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.beta.ua.ac.be SchemaOef2.xsd">
+
+
+    <product>
+        <titel>XML family of specifications</titel>
+        <auteur>Kenneth B. Sall</auteur>
+        <prijs valuta="EUR">50.75</prijs>
+    </product>
+    <product>
+        <titel>Professional XML</titel>
+        <auteur>Mark Birbeck et al.</auteur>
+        <prijs valuta="EUR">62.17</prijs>
+    </product>
+</producten>

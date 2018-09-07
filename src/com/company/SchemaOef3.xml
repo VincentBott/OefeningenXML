@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<boeken xmlns="http://beta.ua.ac.be/boeken" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://beta.ua.ac.be/boeken SchemaOef3.xsd">
+
+    <boek>
+        <titel>Das Kapital</titel>
+        <auteur>Karl Marx</auteur>
+        <jaartal>1880</jaartal>
+        <beoordeling>Heel goed</beoordeling>
+    </boek>
+    <boek>
+        <titel>On the road</titel>
+        <auteur>Jack Kerouac</auteur>
+        <jaartal>1960</jaartal>
+        <beoordeling>Heel goed</beoordeling>
+    </boek>
+    <boek>
+        <titel>De bijbel</titel>
+        <auteur>Jezus Christus</auteur>
+        <jaartal>100</jaartal>
+        <beoordeling>Slecht</beoordeling>
+    </boek>
+    <boek>
+        <titel>Also sprach Zarathustra</titel>
+        <auteur>Friedrich Nietzsche</auteur>
+        <jaartal>1860</jaartal>
+        <beoordeling>Goed</beoordeling>
+    </boek>
+
+</boeken>
+
+
+<!--
+Een jaartal (wanneer het niet ingevuld is, moet het de waarde “2000” hebben)
+Een titel (moet minstens 1 karakter lang zijn)
+Een beoordeling (je moet kunnen meegeven of het boek slecht, goed of heel goed is)
+Eén of meerdere auteurs (elke auteur moet minstens 1 karakter lang zijn). Je moet voor
+elke auteur ook kunnen bijhouden of het een man of een vrouw is. Het geslacht moet verplicht
+worden ingevuld, maar je mag geen default waarde voorzien
+-->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE lokalen [
+<!ELEMENT lokaal (PC)+>
+<!ATTLIST lokaal naam NMTOKEN #REQUIRED>
+<!ELEMENT PC (nr, cursist1, cursist2)>
+<!ELEMENT nr (#PCDATA)>
+<!ELEMENT cursist1 (#PCDATA)>
+<!ELEMENT cursist2 (#PCDATA)>
+        ]>
+
+
+<lokalen>
+<lokaal naam="">
+
+<PC>
+    <nr>1</nr>
+    <cursist1>Koen</cursist1>
+    <cursist2>Jef</cursist2>
+</PC>
+</lokaal>
+</lokalen>
+
+
+
+
+
+

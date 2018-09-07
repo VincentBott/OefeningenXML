@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<lokaal xmlns="http://www.beta.ua.ac.be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+        xsi:schemaLocation="http://www.beta.ua.ac.be  SchemaOef1.xsd">
+
+
+    <pc nr="1">
+        <cursist>Vincent Bott</cursist>
+        <cursist>Jef De Smedt</cursist>
+    </pc>
+    <pc nr="2">
+        <cursist>Karen Damen</cursist>
+        <cursist>Kristel Verbeke</cursist>
+    </pc>
+    <pc nr="3">
+        <cursist>Josje Huisman</cursist>
+        <cursist>Kathleen Aerts</cursist>
+    </pc>
+    <pc nr="4">
+        <cursist>Marthe</cursist>
+        <cursist>Klaasje</cursist>
+    </pc>
+
+</lokaal>

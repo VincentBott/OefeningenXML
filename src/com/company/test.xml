@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<namen xmlns="http://www.vincentbott.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.vincentbott.org  test.xsd">
+
+
+    <naam>
+        <voornaam>Vincent</voornaam>
+        <achternaam>Bott</achternaam>
+        <geboortedatum nationaliteit="B">1974-10-28</geboortedatum>
+
+    </naam>
+    <naam>
+        <voornaam>Kristel</voornaam>
+        <achternaam>Verbeke</achternaam>
+        <geboortedatum nationaliteit="B">1974-10-28</geboortedatum>
+    </naam>
+    <naam>
+        <voornaam>Kathleen</voornaam>
+        <achternaam>Aerts</achternaam>
+        <geboortedatum nationaliteit="B">1974-10-28</geboortedatum>
+    </naam>
+    <naam>
+        <voornaam>Karent</voornaam>
+        <achternaam>Damen</achternaam>
+        <geboortedatum nationaliteit="B">1974-10-28</geboortedatum>
+    </naam>
+    <naam>
+        <voornaam>Jef</voornaam>
+        <achternaam>De Smedt</achternaam>
+        <geboortedatum nationaliteit="B">1974-10-28</geboortedatum>
+    </naam>
+
+</namen>
+
+
