@@ -10,7 +10,7 @@
     <boek>
         <titel>Sense and sensibility</titel>
         <beoordeling>goed</beoordeling>
-        <auteur geslacht="k">Jane Austin</auteur>
+        <auteur geslacht="m">Jane Austin</auteur>
     </boek>
 </boeken>
 
