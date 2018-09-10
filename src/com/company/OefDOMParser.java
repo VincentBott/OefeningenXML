@@ -66,11 +66,13 @@ public class OefDOMParser {
                     if (items.item(i).hasChildNodes()){
                         toonChildren(items.item(i).getChildNodes());
                     }
-                    /*
+
                 case Node.TEXT_NODE:
-                    System.out.println(items.item(i).getNodeValue());
+                    if (items.item(i).getNodeValue() != null)
+                        System.out.printf("Tekst: %s%n", items.item(i).getNodeValue());
+
                     break;
-                    */
+
             }
         }
     }
