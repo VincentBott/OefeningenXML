@@ -20,7 +20,7 @@ public class OefFilmsSaxParser {
 
             SAXParserFactory spf = SAXParserFactory.newDefaultInstance();
 
-            spf.setNamespaceAware(true);
+            spf.setNamespaceAware(true);  //  Belangrijk: qname en prefix !        setNamespaceAware zeer belangrijk !
 
             SAXParser saxParser = spf.newSAXParser();
 
@@ -102,6 +102,7 @@ class MyContentHandler extends DefaultHandler {
 
         if (localName.equals("film")) {
             film = new Film();
+            System.out.println("Nieuwe film gemaakt.");
             for (int i = 0; i < attributes.getLength(); i++) {
                 film.setGenre(attributes.getValue(i));
 
