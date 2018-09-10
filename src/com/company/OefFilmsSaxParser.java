@@ -16,7 +16,6 @@ public class OefFilmsSaxParser {
 
     public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
 
-        try {
 
             SAXParserFactory spf = SAXParserFactory.newDefaultInstance();
 
@@ -30,11 +29,6 @@ public class OefFilmsSaxParser {
             saxParser.parse("films.xml", new MyContentHandler(films));
 
             films.forEach(System.out::println);
-
-
-        } catch (SAXException | IOException | ParserConfigurationException ex) {
-            System.out.println(ex.getMessage());
-        }
 
     }
 }
@@ -102,7 +96,7 @@ class MyContentHandler extends DefaultHandler {
 
         if (localName.equals("film")) {
             film = new Film();
-            System.out.println("Nieuwe film gemaakt.");
+
             for (int i = 0; i < attributes.getLength(); i++) {
                 film.setGenre(attributes.getValue(i));
 
@@ -123,9 +117,6 @@ class MyContentHandler extends DefaultHandler {
 
         else if (localName.equals("jaar"))
             film.setJaar(tekstBuilder.toString().trim());
-
-        else if (localName.equals("genre"))
-            film.setGenre(tekstBuilder.toString().trim());
 
         else if (localName.equals("film")) {
             films.add(film);
