@@ -18,10 +18,6 @@ public class OefFilmsSaxParser {
 
         try {
 
-
-            //  StreamSource xsd = new StreamSource("boeken.xsd");
-
-
             SAXParserFactory spf = SAXParserFactory.newDefaultInstance();
 
             spf.setNamespaceAware(true);
@@ -30,6 +26,7 @@ public class OefFilmsSaxParser {
 
 
             List<Film> films = new ArrayList<>();
+
             saxParser.parse("films.xml", new MyContentHandler(films));
 
             films.forEach(System.out::println);
@@ -37,11 +34,9 @@ public class OefFilmsSaxParser {
 
         } catch (SAXException | IOException | ParserConfigurationException ex) {
             System.out.println(ex.getMessage());
-
         }
 
     }
-
 }
 
 
@@ -77,12 +72,13 @@ class Film {
 
     @Override
     public String toString() {
-        return "Film{" + "titel='" + titel + "', jaar='" + jaar + "', genre='" + genre + "'}";
+        return "Film{" + "titel='" + this.getTitel() + "', jaar='" + this.getJaar() + "', genre='" + this.getGenre() + "'}";
 
     }
 }
 
 class MyContentHandler extends DefaultHandler {
+
     private StringBuilder tekstBuilder = new StringBuilder();
     private List<Film> films;
     private Film film;

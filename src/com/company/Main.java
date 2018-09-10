@@ -1,3 +1,4 @@
+/*
 package com.company;
 
 import org.xml.sax.Attributes;
@@ -56,7 +57,7 @@ public class Main {
                 System.out.printf("\"%s\"\n", titels.get(i).toString());
             }
         */
-
+/*
         } catch (SAXException | IOException | ParserConfigurationException ex) {
             System.out.println(ex.getMessage());
 
@@ -64,6 +65,8 @@ public class Main {
     }
 }
 
+
+/*
 class Boek{
     private String titel;
     private String auteur;
@@ -99,8 +102,8 @@ class Boek{
 
     }
 }
-
-
+*/
+/*
 class MyContentHandler extends DefaultHandler {
     private StringBuilder tekstBuilder = new StringBuilder();
     private List<Boek> boeken;
@@ -204,5 +207,4 @@ class MyContentHandler extends DefaultHandler {
         tekstBuilder.setLength(0); // terug leegmaken
     }
     */
-
 
